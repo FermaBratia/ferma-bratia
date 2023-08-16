@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Index Page*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsla(42, 83%, 62%, 1);
+    --dark-orange: hsla(42, 83%, 56%, 1);
+    --blue: hsla(242, 89%, 17%, 1);
+    --light-blue: hsla(242, 83%, 57%, 1);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 1px var(--dark-orange);
+    margin-bottom: 4px;
+}
+
+header {
+    width: 100%;
+    height: 94px;
+    background-color: var(--orange);
+    color: var(--blue);
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    box-shadow: 0 4px 4px var(--blue);  
+}
+
+.logo {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.logo-img {
+    height: 100%;
+}
+
+.logo h2 {
+    font-size: 32px;
+}
+
+nav {
+    width: 40%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+button {
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--blue);
+    color: var(--dark-orange);
+    border: 6px double var(--orange);
+    cursor: pointer;
+    width: fit-content;
+    text-shadow: 1px -1px 1px var(--white);
+    transition: 500ms;
+}
+
+button:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-orange);
+}
+
+.orange-button {
+    background-color: var(--dark-orange);
+    color: var(--blue);
+    border: 6px double white;
+}
+
+.orange-button:hover {
+    background-color: var(--orange);
+    color: var(--light-blue);
+}
+
+nav button {
+    width: 160px;
+}
+
+main {
+    width: 100%;
+    background: linear-gradient(45deg, var(--blue), var(--dark-orange), var(--orange));
+}
+
+.main-container {
+    background-color: white;
+    opacity: 0.5;
+    transition: 1s ease-in;
+}
+
+.main-container:hover {
+    opacity: 1;
+}
+
+.hero {
+    height: 640px;
+    position: relative;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    overflow: hidden;
+    position: absolute;
+}
+
+#hero-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+main h1 {
+    font-size: 56px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--blue);
+    text-shadow: 2px 0 2px var(--orange);
+}
+
+main h2 {
+    font-size: 40px;
+    font-variant: small-caps;
+    color: var(--blue);
+    font-weight: 600;
+    text-shadow: 1px 1px 1px var(--orange);
+}
+
+#hero-text button {
+    font-size: 24px;
+    padding: 6px 24px;
+}
+
+#hero-image {
+    height: 80%;
+    animation: blobify 10s linear infinite;
+    transition: all 1s ease-in;
+}
+
+@keyframes blobify {
+    from {
+        border-radius: 60% 75% 50% 55% / 60% 75% 70% 65%; 
+    }
+    33% {
+        border-radius: 15% 85% 30% 60% / 60% 30% 85% 15%;
+    }
+    66% {
+        border-radius: 60% 30% 85% 15% / 15% 85% 30% 60%; 
+    }
+    to {
+        border-radius: 60% 45% 50% 55% / 60% 75% 70% 65%;
+    }
+}
+
+#section-one {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.golden-container {
+    background: radial-gradient(var(--orange), var(--dark-orange));
+    width: fit-content;
+    animation: honeycomb-blobify 20s linear infinite;
+    overflow: hidden;
+}
+
+#honeycomb-img {
+    height: 500px;
+    opacity: 0.5;
+    transition: 500ms ease-in;
+}
+
+#honeycomb-img:hover {
+    opacity: 1;
+}
+
+@keyframes honeycomb-blobify {
+    from {
+        border-radius: 40% 50% 70% 80% / 80% 70% 50% 40%;
+    }
+    40% {
+        border-radius: 60% 48% 36% 24% / 24% 36% 48% 60%;
+    }
+    80% {
+        border-radius: 24% 36% 48% 60% / 60% 48% 36% 24%;
+    }
+    to {
+        border-radius: 40% 50% 70% 80% / 80% 70% 50% 40%;
+    }
+}
+
+#sone-text {
+    height: 500px;
+    width: 40%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--orange);
+    color: var(--blue);
+    border-radius: 12%;
+    border: 16px double white;
+    box-shadow: inset 0 0 16px 0 white;
+}
+
+
+main p {
+    font-size: 24px;
+    color: var(--blue);
+    text-align: center;
+}
+
+.break {
+    width: 100%;
+    height: 6px;
+    background-color: var(--blue);
+}
+
+#whitebr {
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    height: 33vh;
+    padding: 16px 32px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 48px;
+}
+
+#footer-logo {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    height: 100%;
+    color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
