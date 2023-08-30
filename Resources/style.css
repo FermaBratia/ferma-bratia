@@ -464,6 +464,10 @@ footer p {
     text-align: center;
 }
 
+.product-content a {
+    text-decoration: none;
+}
+
 .product-content h2 {
     font-size: 32px;
 }
