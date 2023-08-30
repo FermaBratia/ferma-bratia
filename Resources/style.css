@@ -481,3 +481,82 @@ footer p {
     margin-top: 18px;
     font-size: 16px;
 }
+
+/*Contact Page*/
+#contact-hero {
+    height: 80vh;
+    background: linear-gradient(90deg, white, 33%, var(--orange));
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 48px;
+    position: relative;
+}
+
+
+#imagine-magazin {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.6;
+}
+
+#contact-container {
+    height: 80vh;
+    padding: 48px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+#contact-map {
+    height: 100%;
+    aspect-ratio: 1/1;
+    box-shadow: -2px -2px 6px 0 var(--orange);
+}
+
+#contact-info {
+    height: 100%;
+    aspect-ratio: 6/5;
+    background-color: var(--blue);
+    position: absolute;
+    top: -80px;
+    right: 60px;
+    animation: blobify 15s linear infinite;
+    box-shadow: 0 0 12px 0 var(--blueish-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-info h2 {
+    margin-bottom: 32px;
+}
+
+#contact-info h2, #contact-info p {
+    color: var(--dark-orange);
+}
+
+.contact-link {
+    display: grid;
+    gap: 16px;
+    text-decoration: none;
+    grid-template-columns: 1fr 280px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.contact-link p {
+    justify-self: left;
+    text-align: left;
+}
+
+#social-media-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+
