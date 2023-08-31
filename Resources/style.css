@@ -385,9 +385,8 @@ footer p {
     width: 100%;
     display: grid;
     grid-template: 500px / repeat(3, 400px);
-    grid-auto-rows: 420px;
-    grid-auto-columns: repeat(3, 360px);
-    row-gap: 32px;
+    grid-auto-rows: 500px;
+    grid-auto-columns: repeat(3, 400px);
     column-gap: 64px;
     justify-items: center;
     justify-content: center;
@@ -595,10 +594,49 @@ footer p {
 .honey-image {
     height: 65vh;
     aspect-ratio: 1/1;
-    background-image: url("../Resources/miere-mana.jpeg");
     background-position: center center;
     background-size: cover;
     animation: honeycomb-blobify 10s ease-in-out 0s infinite alternate;
+}
+
+#mana {
+    background-image: url("../Resources/miere-mana.jpeg");
+}
+
+#salcam {
+    background-image: url("../Resources/miere-salcam.jpeg");
+}
+
+#floarea-soarelui {
+    background-image: url("../Resources/miere-floarea-soarelui.jpeg");
+}
+
+#poliflora {
+    background-image: url("../Resources/miere-poliflora.jpeg");
+}
+
+#rapita {
+    background-image: url("../Resources/miere-de-rapita.jpeg");
+}
+
+#tei {
+    background-image: url("../Resources/miere-de-tei.jpeg");
+}
+
+#duo {
+    background-image: url("../Resources/miere-duo.jpeg");
+}
+
+#propolis {
+    background-image: url("../Resources/tinctura-de-propolis.jpeg");
+}
+
+#fagure {
+    background-image: url("../Resources/fagure-miere.jpeg");
+}
+
+#polen {
+    background-image: url("../Resources/polen.jpeg");
 }
 
 .honey-details-container {
