@@ -201,7 +201,7 @@ main {
     gap: 16px;
 }
 
-main h1 {
+h1 {
     font-size: 56px;
     text-transform: uppercase;
     font-weight: 600;
@@ -209,7 +209,7 @@ main h1 {
     text-shadow: 2px 0 2px var(--orange);
 }
 
-main h2 {
+h2 {
     font-size: 40px;
     font-variant: small-caps;
     color: var(--blue);
@@ -493,6 +493,27 @@ footer p {
     position: relative;
 }
 
+#contact-hero-text {
+    width: 45%;
+}
+
+#contact-hero-text > * {
+    margin-bottom: 8px;
+}
+
+#contact-hero-text h2 {
+    font-size: 48px;
+}
+
+#contact-hero-text p {
+    text-align: justify;
+}
+
+#contact-hero-text ul {
+    font-size: 24px;
+    color: var(--blue);
+    font-weight: 600;
+}
 
 #imagine-magazin {
     height: 100%;
@@ -531,8 +552,10 @@ footer p {
     align-items: center;
 }
 
-#contact-info h2 {
+#contact-info h1 {
+    color: var(--dark-orange);
     margin-bottom: 32px;
+    text-shadow: 1px 1px 1px var(--light-blue);
 }
 
 #contact-info h2, #contact-info p {
@@ -559,4 +582,45 @@ footer p {
     gap: 24px;
 }
 
+/*Individual product pages*/
 
+.honey-page-container {
+    height: 70vh;
+    padding: 50px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.honey-image {
+    height: 65vh;
+    aspect-ratio: 1/1;
+    background-image: url("../Resources/miere-mana.jpeg");
+    background-position: center center;
+    background-size: cover;
+    animation: honeycomb-blobify 10s ease-in-out 0s infinite alternate;
+}
+
+.honey-details-container {
+    height: 65vh;
+    width: 50%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: start;
+    gap: 4px;
+    color: var(--blue);
+}
+
+.honey-details-container h1 {
+    margin-bottom: 16px;
+}
+
+.honey-buttons-container button {
+    padding: 2px 8px;
+}
+
+#honey-blob {
+    align-self: center;
+}
