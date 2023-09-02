@@ -144,61 +144,6 @@ nav ul {
     gap: 32px;
 }
 
-@media (max-width: 426px){
-    h1 {
-        font-size: 24px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 16px;
-        margin-bottom: none;
-    }
-    header {
-        height: fit-content;
-        padding-top: 20px;
-        flex-direction: column;
-        gap: 16px;
-    }
-    .logo {
-        margin: 16px 0 4px 0;
-    }
-    .hamburger {
-        display: block;
-        margin: 24px 0 12px 0;
-        position: absolute;
-        right: 20px;
-    }
-    .hamburger.active{
-        background-color: var(--light-blue);
-    }    
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    nav {
-        height: 0px;
-        overflow: hidden;
-        transition: 1s ease-in;
-    }
-    nav.active {
-        height: 100vh;
-    }
-    nav ul {
-        flex-direction: column-reverse;
-        justify-content: start;
-        align-items: start;
-    }
-    nav ul li {
-        margin: 24px 0 12px 0;
-    }
-}
 
 button {
     padding: 8px;
@@ -255,18 +200,12 @@ main {
 
 .hero {
     height: 640px;
-    position: relative;
-}
-
-.hero-container {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 64px;
     overflow: hidden;
-    position: absolute;
+
 }
 
 #hero-text {
@@ -480,6 +419,106 @@ footer p {
         margin-left: 16px;
     }
     #sone-text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 426px){
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 16px;
+        margin-bottom: none;
+    }
+    header {
+        height: fit-content;
+        padding-top: 20px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .logo {
+        margin: 16px 0 4px 0;
+    }
+    .hamburger {
+        display: block;
+        margin: 24px 0 12px 0;
+        position: absolute;
+        right: 20px;
+    }
+    .hamburger.active{
+        background-color: var(--light-blue);
+    }    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    nav {
+        height: 0px;
+        overflow: hidden;
+        transition: 1s ease-in;
+    }
+    nav.active {
+        height: 100vh;
+    }
+    nav ul {
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: start;
+    }
+    nav ul li {
+        margin: 24px 0 12px 0;
+    }
+    .hero {
+        height: 70vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    #hero-text {
+        height: 33vh;
+    }
+    #hero-image {
+        height: 33vh;
+        margin-bottom: 5vh;
+    }
+    .golden-container {
+        display: none;
+    }
+    #sone-text {
+        width: 100%;
+        border-radius: 30%;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+    }
+    #footer-logo {
+        height: 80px;
+    }
+    .footer-container {
+        height: auto;
+        align-items: center;
+        width: 80%;
+        gap: 30px;
+    }
+    #contact-ferma-bratia {
+        align-items: center;
+    }
+    footer h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    footer p {
         font-size: 20px;
     }
 }
