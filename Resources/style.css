@@ -257,18 +257,6 @@ main {
     position: relative;
 }
 
-.golden-container h2 {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 75%;
-    left: 0;
-    padding: 8px 0 32px 0;
-    box-shadow: 6px 0 3px 3px white;
-    background: linear-gradient(var(--orange), white);
-    visibility: hidden;
-}
-
 #honeycomb-img {
     height: 500px;
     opacity: 0.5;
@@ -596,6 +584,52 @@ footer strong {
     gap: 24px;
 }
 
+/*Individual product pages*/
+
+.honey-page-container {
+    height: 70vh;
+    padding: 50px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.honey-image {
+    height: 65vh;
+    aspect-ratio: 1/1;
+    background-position: center center;
+    background-size: cover;
+    animation: honeycomb-blobify 10s ease-in-out 0s infinite alternate;
+}
+
+.honey-details-container {
+    height: 65vh;
+    width: 60%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: start;
+    gap: 4px;
+    color: var(--blue);
+}
+
+.honey-details-container h1 {
+    margin-bottom: 16px;
+}
+
+.honey-details-container p {
+    text-align: justify;
+}
+
+.honey-buttons-container button {
+    padding: 2px 8px;
+}
+
+#honey-blob {
+    align-self: center;
+}
+
 @media (max-width: 1024px){
     h1 {
         font-size: 40px;
@@ -645,6 +679,15 @@ footer strong {
     #imagine-magazin {
         height: 70vh;
         opacity: 0.6;
+    }
+    .honey-page-container {
+        margin-bottom: 100px;
+    }
+    .honey-details-container{
+        padding: 15px;
+    }
+    #honey-blob {
+        margin-top: 50px;
     }
 }
 
@@ -755,7 +798,21 @@ footer strong {
         justify-self: left;
         width: 60%;
         transform: translateX(20px);
-    }    
+    }
+    .honey-page-container {
+        height: 90vh;
+        padding: 0;
+        margin-bottom: 75px;
+        justify-content: left;
+    }
+    .honey-image {
+        height: 50vh;
+    }
+    #honey-blob {
+        width: 90%;
+        text-align: center;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 426px){
@@ -832,11 +889,6 @@ footer strong {
         flex-direction: column-reverse;
     }
 
-    .golden-container h2 {
-        font-size: 24px;
-        visibility: visible;
-    }
-
     #sone-text {
         width: 100%;
         border-radius: 30%;
@@ -870,8 +922,9 @@ footer strong {
         font-size: 20px;
     }
     .blob-text {
-        height: 300px;
-        width: 90%;
+        height: 400px;
+        padding: 24px;
+        width: 95%;
         margin-left: 16px;
         font-size: 16px;
         margin-top: 32px;
@@ -933,7 +986,27 @@ footer strong {
     .contact-link {
         justify-self: left;
         width: 60%;
-        transform: translateX(0px);
+        transform: translateX(-20px);
+    }
+    .honey-page-container {
+        height: 110vh;
+        flex-direction: column;
+        padding-top: 16px;
+        margin-bottom: 50px;
+        gap: 8px;
+    }
+    .honey-details-container {
+        height: 50vh;
+        width: 90%;
+    }
+    .honey-details-container h1 {
+        font-size: 24px;
+    }
+    .honey-details-container p {
+        font-size: 16px;
+    }
+    #honey-blob p {
+        font-size: 16px;
     }
 }
 
@@ -942,7 +1015,7 @@ footer strong {
         height: 120vh;
     }
     .golden-container {
-        width: 90%;
+        width: 100%;
         height: 300px;
     }
     #program-ferma-bratia > * {
@@ -951,30 +1024,16 @@ footer strong {
     }
     .blob-text {
         height: 400px;
+        width: 100%;
+        margin-left: 0;
     }
     .contact-link {
         justify-content: left;
         width: 90%;
-        transform: translateX(0px);
     }
-}
-
-/*Individual product pages*/
-
-.honey-page-container {
-    height: 70vh;
-    padding: 50px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.honey-image {
-    height: 65vh;
-    aspect-ratio: 1/1;
-    background-position: center center;
-    background-size: cover;
-    animation: honeycomb-blobify 10s ease-in-out 0s infinite alternate;
+    #honey-blob {
+        width: 95%;
+    }
 }
 
 #mana {
@@ -1015,28 +1074,4 @@ footer strong {
 
 #polen {
     background-image: url("../Resources/polen.jpeg");
-}
-
-.honey-details-container {
-    height: 65vh;
-    width: 50%;
-    padding: 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: start;
-    gap: 4px;
-    color: var(--blue);
-}
-
-.honey-details-container h1 {
-    margin-bottom: 16px;
-}
-
-.honey-buttons-container button {
-    padding: 2px 8px;
-}
-
-#honey-blob {
-    align-self: center;
 }
