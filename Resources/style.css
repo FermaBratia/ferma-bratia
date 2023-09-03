@@ -360,6 +360,53 @@ footer strong {
 
 /*despre.html*/
 
+#despre-noi {
+    height: 100vh;
+    width: 100%;
+}
+
+#despre-noi-banner {
+    aspect-ratio: 10/4;
+    width: 100%;
+    background: url(../Resources/camp-floarea-soarelui.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dn-banner-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--orange);
+    opacity: 0.4;
+}
+
+#dn-banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 50%;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    transition: 2s;
+    z-index: 2;
+}
+
+#dn-banner-title:hover {
+    background-color: hsla(0, 0%, 100%, 0.9);
+    box-shadow: 0 0 16px 8px white;
+}
+
+#dn-banner-title h2 {
+    font-size: 60px;
+}
 
 .blob-text {
     height: 500px;
