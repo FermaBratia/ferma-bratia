@@ -205,7 +205,6 @@ main {
     align-items: center;
     gap: 64px;
     overflow: hidden;
-
 }
 
 #hero-text {
@@ -255,6 +254,19 @@ main {
     width: fit-content;
     animation: honeycomb-blobify 20s linear infinite;
     overflow: hidden;
+    position: relative;
+}
+
+.golden-container h2 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 75%;
+    left: 0;
+    padding: 8px 0 32px 0;
+    box-shadow: 6px 0 3px 3px white;
+    background: linear-gradient(var(--orange), white);
+    visibility: hidden;
 }
 
 #honeycomb-img {
@@ -351,7 +363,11 @@ footer a {
 }
 
 footer p {
-    font-size: 18px;
+    font-size: 24px;
+}
+
+footer strong {
+    font-weight: 600;
 }
 
 
@@ -383,6 +399,9 @@ footer p {
     }
     #sone-text {
         padding: 16px;
+    }
+    footer p {
+        font-size: 18px;
     }
 }
 
@@ -478,25 +497,37 @@ footer p {
         margin: 24px 0 12px 0;
     }
     .hero {
-        height: 70vh;
+        height: 68vh;
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        gap: 16px;
     }
     #hero-text {
         height: 33vh;
+        text-align: center;
     }
     #hero-image {
         height: 33vh;
-        margin-bottom: 5vh;
     }
-    .golden-container {
-        display: none;
+
+    #section-one {
+        height: 100vh;
+        flex-direction: column-reverse;
     }
+
+    .golden-container h2 {
+        visibility: visible;
+    }
+
     #sone-text {
         width: 100%;
         border-radius: 30%;
     }
+    #sone-text p {
+        font-size: 16px;
+    }
+
     footer {
         flex-direction: column;
         height: auto;
@@ -520,6 +551,20 @@ footer p {
     }
     footer p {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    #section-one {
+        height: 120vh;
+    }
+    .golden-container {
+        width: 90%;
+        height: 300px;
+    }
+    #program-ferma-bratia > * {
+        text-align: center;
+        margin-bottom: 12px;
     }
 }
 
