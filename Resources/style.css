@@ -361,13 +361,12 @@ footer strong {
 /*despre.html*/
 
 #despre-noi {
-    height: 100vh;
     width: 100%;
 }
 
 #despre-noi-banner {
-    aspect-ratio: 10/4;
     width: 100%;
+    aspect-ratio: 10/4;
     background: url(../Resources/camp-floarea-soarelui.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -408,25 +407,21 @@ footer strong {
     font-size: 60px;
 }
 
-.blob-text {
+#blob-text {
     height: 500px;
     width: 70%;
-    margin-left: 64px;
+    margin: 32px 0 32px 10%;
     background-color: var(--orange);
     box-shadow: inset 0 0 36px 36px var(--dark-orange);
-    margin-top: 64px;
     display: flex;
     flex-direction: column;
+    align-self: center;
     justify-content: center;
     align-items: center;
     padding: 32px;
     animation: honeycomb-blobify 15s linear infinite;
     transition: all 1s ease-in;
     overflow: hidden;
-}
-
-.blob-text h2 {
-    font-size: 48px;
 }
 
 /*produse.html*/
@@ -706,6 +701,9 @@ footer strong {
     #sone-text {
         padding: 16px;
     }
+    #dn-banner-title h2 {
+        font-size: 40px;
+    }
     footer p {
         font-size: 18px;
     }
@@ -935,7 +933,6 @@ footer strong {
         height: 100vh;
         flex-direction: column-reverse;
     }
-
     #sone-text {
         width: 100%;
         border-radius: 30%;
@@ -943,7 +940,30 @@ footer strong {
     #sone-text p {
         font-size: 18px;
     }
-
+    #despre-noi-banner {
+        padding: 0;
+        width: calc(100% + 64px);
+        transform: translateX(-32px);
+        aspect-ratio: 10/7;
+    }
+    #dn-banner-title {
+        height: 40%;
+        width: 100%;
+    }
+    #blob-text {
+    height: 400px;
+    width: 95%;
+    margin-left: 16px;
+    font-size: 16px;
+    padding: 32px;
+    }
+    #blob-text h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    #blob-text p {
+        font-size: 18px;
+    }
     footer {
         flex-direction: column;
         height: auto;
@@ -967,22 +987,6 @@ footer strong {
     }
     footer p {
         font-size: 20px;
-    }
-    .blob-text {
-        height: 400px;
-        padding: 24px;
-        width: 95%;
-        margin-left: 16px;
-        font-size: 16px;
-        margin-top: 32px;
-        padding: 32px;
-    }
-    .blob-text h2 {
-        font-size: 24px;
-        margin-bottom: 12px;
-    }
-    .blob-text p {
-        font-size: 18px;
     }
     #product-grid {
         grid-template: 300px / 240px;
@@ -1069,7 +1073,7 @@ footer strong {
         text-align: center;
         margin-bottom: 12px;
     }
-    .blob-text {
+    #blob-text {
         height: 400px;
         width: 100%;
         margin-left: 0;
@@ -1080,6 +1084,11 @@ footer strong {
     }
     #honey-blob {
         width: 95%;
+    }
+    #blob-text {
+        height: 500px;
+        width: 100%;
+        padding: 32px;
     }
 }
 
