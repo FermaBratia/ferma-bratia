@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -56,7 +61,7 @@ table {
 :root {
     --orange: hsl(42, 83%, 62%);
     --dark-orange: #ecb432;
-    --blue: hsl(242, 89%, 17%);
+    --blue: hsl(242, 89%, 10%);
     --light-blue: hsl(242, 83%, 57%);
     --blueish-white: hsl(242, 83%, 87%);
 }
@@ -73,22 +78,24 @@ body {
 h1 {
     font-size: 56px;
     text-transform: uppercase;
-    font-weight: 600;
     color: var(--blue);
     text-shadow: 2px 0 2px var(--orange);
+    font-family: 'Lobster', cursive;
 }
 
 h2 {
     font-size: 40px;
     font-variant: small-caps;
     color: var(--blue);
-    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
     text-shadow: 1px 1px 1px var(--orange);
 }
 
 h3 {
     font-size: 24px;
-    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
     font-variant: small-caps;
     text-shadow: 1px 1px 1px var(--dark-orange);
     margin-bottom: 4px;
@@ -96,7 +103,7 @@ h3 {
 
 header {
     width: 100%;
-    height: 94px;
+    height: 120px;
     background-color: var(--orange);
     color: var(--blue);
     position: sticky;
@@ -112,7 +119,8 @@ header {
 }
 
 .logo {
-    height: 75px;
+    align-self: start;
+    height: 135%;
 }
 
 .logo-img {
@@ -158,6 +166,8 @@ button {
     width: fit-content;
     text-shadow: 1px -1px 1px var(--white);
     transition: 500ms;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
 }
 
 button:hover {
@@ -301,6 +311,7 @@ main {
 
 main p {
     font-size: 24px;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--blue);
     text-align: center;
 }
@@ -351,6 +362,7 @@ footer a {
 }
 
 footer p {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
 }
 
@@ -407,7 +419,7 @@ footer strong {
     font-size: 60px;
 }
 
-#blob-text {
+.blob-text {
     height: 500px;
     width: 70%;
     margin: 32px 0 32px 10%;
@@ -763,6 +775,9 @@ footer strong {
     #honeycomb-img {
         height: 240px;
     }
+    #section-one {
+        height: 30vh;
+    }
     #sone-text {
         width: 70%;
         font-size: 16px;
@@ -879,6 +894,7 @@ footer strong {
     }
     .logo {
         margin: 16px 0 4px 0;
+        height: 200px;
     }
     .hamburger {
         display: block;
@@ -928,10 +944,12 @@ footer strong {
     #hero-image {
         height: 33vh;
     }
-
     #section-one {
-        height: 100vh;
+        height: 50vh;
         flex-direction: column-reverse;
+        justify-content: center;
+        gap: 32px;
+        margin: 0;
     }
     #sone-text {
         width: 100%;
@@ -950,18 +968,18 @@ footer strong {
         height: 40%;
         width: 100%;
     }
-    #blob-text {
+    .blob-text {
     height: 400px;
     width: 95%;
     margin-left: 16px;
     font-size: 16px;
     padding: 32px;
     }
-    #blob-text h2 {
+    .blob-text h2 {
         font-size: 24px;
         margin-bottom: 12px;
     }
-    #blob-text p {
+    .blob-text p {
         font-size: 18px;
     }
     footer {
@@ -1063,7 +1081,7 @@ footer strong {
 
 @media (max-width: 320px) {
     #section-one {
-        height: 120vh;
+        height: 60vh;
     }
     .golden-container {
         width: 100%;
@@ -1073,7 +1091,7 @@ footer strong {
         text-align: center;
         margin-bottom: 12px;
     }
-    #blob-text {
+    .blob-text {
         height: 400px;
         width: 100%;
         margin-left: 0;
@@ -1085,7 +1103,7 @@ footer strong {
     #honey-blob {
         width: 95%;
     }
-    #blob-text {
+    .blob-text {
         height: 500px;
         width: 100%;
         padding: 32px;
