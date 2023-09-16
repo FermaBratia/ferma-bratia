@@ -7,7 +7,7 @@ const telefonFermaBratia = document.querySelectorAll(".telefon-ferma-bratia");
 telefonFermaBratia.forEach(telNumber => {
     telNumber.addEventListener("mouseover", () => {
         if (telNumber.id === "madalina-number") {
-            telNumber.textContent = "Madalina";
+            telNumber.textContent = "Mădălina";
         } else {
             telNumber.textContent = "Dani";
         }
