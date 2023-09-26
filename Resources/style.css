@@ -379,7 +379,7 @@ footer strong {
     align-items: center;
 }
 
-.telefon-ferma-bratia {
+/*.telefon-ferma-bratia {
     width: 110px;
     box-shadow: inset 0 0 0 0 var(--orange);
     transition: 1.5s;
@@ -405,6 +405,7 @@ footer strong {
         opacity: var(--blue);
     }
 }
+*/
 
 /*despre.html*/
 
@@ -695,6 +696,7 @@ footer strong {
     background-position: center center;
     background-size: cover;
     animation: honeycomb-blobify 10s ease-in-out 0s infinite alternate;
+    transition: 300ms ease;
 }
 
 .honey-details-container {
@@ -1049,7 +1051,7 @@ footer strong {
         aspect-ratio: 6/5;
         transform: translateY(10px);
         padding: 6px;
-        margin-bottom: 24px;
+        margin-bottom: 24apx;
     }
     #contact-info h1 {
         margin-bottom: 12px;
@@ -1291,12 +1293,22 @@ footer strong {
     }
 }
 
+/*Imagini produse miere*/
+
 #mana {
     background-image: url("../Resources/miere-mana.jpeg");
 }
 
+#mana2 {
+    background-image: url("../Resources/miere-mana2.jpg");
+}
+
 #salcam {
     background-image: url("../Resources/miere-salcam.jpeg");
+}
+
+#salcam2 {
+    background-image: url("../Resources/miere-salcam2.jpg");
 }
 
 #floarea-soarelui {
@@ -1307,12 +1319,24 @@ footer strong {
     background-image: url("../Resources/miere-poliflora.jpeg");
 }
 
+#poliflora2 {
+    background-image: url("../Resources/miere-poliflora2.jpg");
+}
+
 #rapita {
     background-image: url("../Resources/miere-de-rapita.jpeg");
 }
 
+#rapita2 {
+    background-image: url("../Resources/miere-rapita2.jpg");
+}
+
 #tei {
     background-image: url("../Resources/miere-de-tei.jpeg");
+}
+
+#tei2 {
+    background-image: url("../Resources/miere-tei2.jpg");
 }
 
 #duo {
@@ -1329,4 +1353,8 @@ footer strong {
 
 #polen {
     background-image: url("../Resources/polen.jpeg");
+}
+
+#polen2 {
+    background-image: url("../Resources/polen2.jpg");
 }
