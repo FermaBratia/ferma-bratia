@@ -5,8 +5,44 @@ const navLinks = document.querySelectorAll(".nav-link");
 const productButtons = document.querySelectorAll(".product-btn");
 const honeyPrice = document.querySelector(".pret-miere");
 const honeyImage = document.querySelector(".honey-image");
+const btnLeft = document.getElementById("btn-left");
+const btnRight = document.getElementById("btn-right");
+const imagesText = document.getElementById("images-text");
+const imagesImg = document.getElementById("images-img");
 
 //Hamburger Menu Section
+
+let img=1;
+let imageH2 = document.createElement("h2");
+imageH2.textContent = "Următorul apicultor al familiei";
+imagesText.appendChild(imageH2);
+
+function changeImg() {
+    if (img===1){
+        imageH2.textContent = "Următorul apicultor al familiei";
+        imagesImg.classList = "";
+        imagesImg.classList.add("i1");
+    } else if (img===2){
+        imageH2.textContent = "";
+        imagesImg.classList = "";
+        imagesImg.classList.add("i2");
+    };
+}
+
+btnLeft.addEventListener("click", () => {
+    if (img>1){
+        img--;
+    }
+    changeImg();
+});
+
+btnRight.addEventListener("click", () => {
+    img++;
+    changeImg();
+})
+
+
+// btnLeft.addEventListener("click", nah);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
