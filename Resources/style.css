@@ -314,17 +314,31 @@ main p {
     text-align: center;
 }
 
+#despre-noi-blob {
+    box-sizing: content-box;
+    height: 500px;
+    width: 70%;
+    margin: 32px 0 32px 10%;
+    padding: 36px 64px;
+}
+
 #images {
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 32px;
 }
 
 #images button {
     height: 100px;
+}
+
+#images #images-content {
+    flex: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #images-text {
@@ -358,7 +372,57 @@ main p {
 
 .i2 {
     background-image: url(imagine2.jpg);
+/*    animation: pastoral 8s linear 0s infinite;*/
 }
+
+.i2:hover {
+    background-image: url(imagine2b.jpg);
+}
+
+@keyframes pastoral {
+    0% {
+        background-image: url(imagine2.jpg);
+    }
+    33% {
+        background-image: url(imagine2b.jpg);
+    }
+    66% {
+        background-image: url(imagine2c.jpg);
+    }
+    100% {
+        background-image: url(imagine2d.jpg);
+    }
+}
+
+.i3 {
+    background-image: url(imagine3.jpg);
+}
+
+.i4 {
+    background-image: url(imagine4.jpg);
+}
+
+.i4:hover {
+    background-image: url(imagine4b.jpg);
+}
+
+.i5 {
+    background-image: url(imagine5.jpg);
+}
+
+.i5:hover {
+    background-image: url(imagine5b.jpg);
+}
+
+.i6 {
+    background-image: url(imagine6.jpg);
+}
+
+.i6:hover {
+    background-image: url(imagine6b.jpg);
+}
+
+
 
 .break {
     width: 100%;
@@ -393,7 +457,6 @@ footer {
     color: var(--orange);
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 footer a {
@@ -503,10 +566,6 @@ footer strong {
 }
 
 .blob-text {
-    box-sizing: content-box;
-    height: 500px;
-    width: 70%;
-    margin: 32px 0 32px 10%;
     background-color: var(--orange);
     box-shadow: inset 0 0 36px 36px var(--dark-orange);
     display: flex;
@@ -514,7 +573,6 @@ footer strong {
     align-self: center;
     justify-content: center;
     align-items: center;
-    padding: 36px 64px;
     animation: honeycomb-blobify 15s linear infinite;
     transition: all 1s ease-in;
     overflow: hidden;
@@ -807,6 +865,12 @@ footer strong {
     #sone-text {
         padding: 16px;
     }
+    #despre-noi-blob {
+        height: 600px;
+        width: 85%;
+        margin: 32px 0 32px 0;
+        padding: 36px 64px;
+    }
     #dn-banner-title h2 {
         font-size: 40px;
     }
@@ -871,6 +935,7 @@ footer strong {
     }
     #section-one {
         height: 30vh;
+        margin-bottom: 100px;
     }
     #sone-text {
         width: 70%;
@@ -879,6 +944,23 @@ footer strong {
     }
     #sone-text p {
         font-size: 20px;
+    }
+    #despre-noi-blob {
+        height: 900px;
+        width: 80%;
+        margin: 32px 0 32px 0;
+        padding: 36px 64px;
+    }
+    #images-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+    #images-img {
+        height: 400px;
+        width: 400px;
+    }
+    footer {
+        gap: 10px;
     }
     #product-grid {
         grid-template: 320px / repeat(3, 256px);
@@ -1202,12 +1284,11 @@ footer strong {
         height: 40%;
         width: 100%;
     }
-    .blob-text {
-    height: 400px;
-    width: 95%;
-    margin-left: 16px;
-    font-size: 16px;
-    padding: 32px;
+    #despre-noi-blob {
+        height: 200vh;
+        width: 65%;
+        margin: 32px 0 32px 0;
+        padding: 36px 64px;
     }
     .blob-text h2 {
         font-size: 24px;
@@ -1374,8 +1455,12 @@ footer strong {
     background-image: url("../Resources/miere-poliflora2.jpg");
 }
 
+#poliflora3 {
+    background-image: url("../Resources/miere-poliflora3.jpg");
+}
+
 #rapita {
-    background-image: url("../Resources/miere-de-rapita.jpeg");
+    background-image: url("../Resources/miere-rapita.jpeg");
 }
 
 #rapita2 {
@@ -1383,7 +1468,7 @@ footer strong {
 }
 
 #tei {
-    background-image: url("../Resources/miere-de-tei.jpeg");
+    background-image: url("../Resources/miere-tei.jpeg");
 }
 
 #tei2 {
@@ -1392,6 +1477,18 @@ footer strong {
 
 #duo {
     background-image: url("../Resources/miere-duo.jpeg");
+}
+
+#duo3 {
+    background-image: url("../Resources/miere-duo3.jpg");
+}
+
+#capaceala {
+    background-image: url("../Resources/capaceala.jpg");
+}
+
+#capaceala2 {
+    background-image: url("../Resources/capaceala2.jpg");
 }
 
 #propolis {
