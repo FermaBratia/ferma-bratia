@@ -118,7 +118,7 @@ productButtons.forEach(productButton => {
             honeyPrice.textContent = "15 RON";
             honeyImage.id = "rapita2";
         } else if (productButton.id === "rapita1000"){
-            honeyPrice.textConent = "25 RON";
+            honeyPrice.textContent = "25 RON";
             honeyImage.id = "rapita";
         } else if (productButton.id === "tei450"){
             honeyPrice.textContent = "15RON";
