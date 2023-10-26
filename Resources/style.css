@@ -975,6 +975,9 @@ footer strong {
         margin: 32px 0 32px 0;
         padding: 36px 64px;
     }
+    #despre-noi-blob p {
+        width: 90%;
+    }
     #images-content {
         flex-direction: column;
         gap: 16px;
@@ -1310,8 +1313,7 @@ footer strong {
     #despre-noi-blob {
         height: 200vh;
         width: 65%;
-        margin: 32px 0 32px 0;
-        padding: 36px 64px;
+        padding: 0 64px;
     }
     .blob-text h2 {
         font-size: 24px;
