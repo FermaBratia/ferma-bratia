@@ -322,6 +322,10 @@ main p {
     padding: 36px 64px;
 }
 
+#despre-noi-blob p {
+    width: 70%;
+}
+
 #images {
     padding: 0 16px;
     display: flex;
