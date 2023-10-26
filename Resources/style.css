@@ -578,10 +578,6 @@ footer strong {
     overflow: hidden;
 }
 
-.blob-text p {
-    width: 80%;
-}
-
 /*produse.html*/
 
 .main-title {
@@ -797,6 +793,7 @@ footer strong {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 64px;
 }
 
 .honey-image {
@@ -834,6 +831,29 @@ footer strong {
 
 #honey-blob {
     align-self: center;
+    margin: 0 32px;
+    padding: 60px 32px;
+    color: var(--blue);
+    margin-bottom: 32px;
+}
+
+#honey-blob h2 {
+    margin-bottom: 16px;
+}
+
+#honey-blob h3 {
+    margin: 4px;
+    text-align: left;
+}
+
+#honey-blob ul {
+    margin-bottom: 16px;
+}
+
+#honey-blob ul {
+    font-size: 24px;
+    font-family: "Cormorant Garamond", serif;
+    list-style-type: circle;
 }
 
 @media (max-width: 1024px){
@@ -1036,9 +1056,8 @@ footer strong {
         transform: translateX(20px);
     }
     .honey-page-container {
-        height: 90vh;
         padding: 0;
-        margin-bottom: 75px;
+        margin-bottom: 0px;
         justify-content: left;
     }
     .honey-image {
@@ -1047,7 +1066,7 @@ footer strong {
     #honey-blob {
         width: 90%;
         text-align: center;
-        padding: 15px;
+        padding: 48px;
     }
 }
 
@@ -1297,6 +1316,13 @@ footer strong {
     .blob-text p {
         font-size: 18px;
     }
+    #images button {
+        height: 50px;
+    }
+    #images-img {
+        height: 250px;
+        width: 250px;
+    }
     footer {
         flex-direction: column;
         height: auto;
@@ -1373,24 +1399,40 @@ footer strong {
         transform: translateX(-20px);
     }
     .honey-page-container {
-        height: 110vh;
         flex-direction: column;
         padding-top: 16px;
-        margin-bottom: 50px;
+        margin-bottom: 300px;
         gap: 8px;
     }
+    .honey-image {
+        min-height: 300px;
+    }
     .honey-details-container {
-        height: 50vh;
         width: 90%;
     }
     .honey-details-container h1 {
         font-size: 24px;
     }
     .honey-details-container p {
-        font-size: 16px;
+        font-size: 24px;
     }
     #honey-blob p {
-        font-size: 16px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 376px) {
+    .hero {
+        margin-bottom: 80px;
+    }
+    #section-one {
+        margin-bottom: 64px;
+    }
+    #sone-text h2 {
+        text-align: center;
+    }
+    .honey-page-container {
+        margin-bottom: 350px;
     }
 }
 
@@ -1402,12 +1444,26 @@ footer strong {
         width: 100%;
         height: 300px;
     }
+    #sone-text button {
+        font-size: 14px;
+    }
+    #despre-noi-blob {
+        height: 270vh;
+        width: 60%;
+    }
+    #despre-noi-blob button {
+        font-size: 14px;
+    }
+    #images-img {
+        height: 150px;
+        width: 150px;
+    }
     #program-ferma-bratia > * {
         text-align: center;
         margin-bottom: 12px;
     }
     .blob-text {
-        height: 400px;
+        text-align: justify;
         width: 100%;
         margin-left: 0;
     }
@@ -1416,12 +1472,8 @@ footer strong {
         width: 90%;
     }
     #honey-blob {
-        width: 95%;
-    }
-    .blob-text {
-        height: 500px;
-        width: 100%;
-        padding: 32px;
+        width: 80%;
+        padding: 100px;
     }
 }
 
