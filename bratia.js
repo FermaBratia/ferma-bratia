@@ -103,7 +103,15 @@ productButtons.forEach(productButton => {
         } else if (productButton.id === "salcam1000"){
             honeyPrice.textContent = "35 RON";
             honeyImage.id = "salcam";
-        } //Pune floarea soarelui aici
+        }
+        else if (productButton.id === "soare450"){
+            honeyPrice.textContent = "15 RON";
+            //Pune imaginea aici
+        }
+        else if (productButton.id === "soare1000"){
+            honeyPrice.textContent = "25 RON";
+            honeyImage.id = "floarea-soarelui";
+        }
         else if (productButton.id === "poliflora300"){
             honeyPrice.textContent = "10 RON";
             honeyImage.id = "poliflora3";
