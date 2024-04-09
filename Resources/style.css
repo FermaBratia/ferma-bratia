@@ -383,7 +383,7 @@ main p {
     background-image: url(imagine2b.jpg);
 }
 
-@keyframes pastoral {
+/*@keyframes pastoral {
     0% {
         background-image: url(imagine2.jpg);
     }
@@ -396,7 +396,7 @@ main p {
     100% {
         background-image: url(imagine2d.jpg);
     }
-}
+}*/
 
 .i3 {
     background-image: url(imagine3.jpg);
@@ -577,9 +577,24 @@ footer strong {
     align-self: center;
     justify-content: center;
     align-items: center;
-    animation: honeycomb-blobify 15s linear infinite;
+    animation: text-blob 15s linear infinite;
     transition: all 1s ease-in;
     overflow: hidden;
+}
+
+@keyframes text-blob {
+    from {
+        border-radius: 28% 18% 29% 38% / 60% 75% 70% 65%; 
+    }
+    33% {
+        border-radius: 25% 15% 30% 20% / 60% 30% 85% 15%;
+    }
+    66% {
+        border-radius: 10% 30% 15% 25% / 15% 85% 30% 60%; 
+    }
+    to {
+        border-radius: 20% 35% 28% 8% / 60% 75% 70% 65%;
+    }
 }
 
 /*produse.html*/
